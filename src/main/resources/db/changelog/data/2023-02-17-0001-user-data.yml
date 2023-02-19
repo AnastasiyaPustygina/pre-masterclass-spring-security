@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2023-02-18--0001-user-data
+      author: apustygina
+      runOnChange: true
+      loadData:
+        primaryKey: id
+        file: data/csv/2023-02-17--0001-user-data.csv
+        relativeToChangelogFile: true
+        separator: ;
+        quotChar: '"'
+        encoding: UTF-8
+        tableName: users
